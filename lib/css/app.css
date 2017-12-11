@@ -1,0 +1,80 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: transparent
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #333333;
+	background-color: #fff
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+a {
+	color: #00ae66;
+	text-decoration: none
+}
+
+a:focus,
+a:hover {
+	color: #00ae66;
+	text-decoration:none
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline: 0;
+	outline-offset: -2px
+}
+
+figure {
+	margin: 0
+}
+
+img {
+	vertical-align: middle
+}
+ul,li{list-style-type: none; margin: 0; padding: 0;}
+
+/* 顶部 */
+.header{ position: fixed; height: 44px; width: 100%; z-index: 10; line-height: 44px; background-color: #00AE66;}
+.header a{display: block; float: left; padding-left: 15px; color: #FFFFFF;}
+.header a i{font-size: 16px;}
+.header .h-menu{width:10%; float: left;}
+.header .h-logo{width:50%; float: left; text-align: left;}
+.header .h-logo a{ padding: 0;}
+.header .h-logo img{height: 28px;}
+.header .h-user{width:10%; float: right;}
+.header .h-search{width:10%; float: right;}
+
+/* 底部 */
+.footer{position: fixed; bottom: 0; width: 100%; z-index: 10; height: 50px; border-top: 1px solid #e6e7e8;}
+.footer ul li{float: left; width:20%; height: 50px;}
+.footer ul li a{ display: block; height: 50px; text-align: center; color: #999999;}
+.footer ul li a.active{ color: #00AE66;}
+.footer ul li a span{display: block; height:25px; line-height: 25px;padding-top: 3px;}
+.footer ul li a span i{font-size:16px;}
