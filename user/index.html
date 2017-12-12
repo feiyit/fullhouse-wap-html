@@ -7,22 +7,40 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="../lib/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="../lib/css/app.css" />
-		<title>反馈意见</title>
+		<title>个人中心</title>
 	</head>
 	<body>
 		<div class="header"></div>
 		<div class="mui-content">			
 			<div class="user-index">
-				<div class="login-cimg"><img src="../lib/img/h_logo.png" /></div>
+				<div class="login-cimg mui-hidden"><img src="../lib/img/h_logo.png" /></div>
+				<div class="user-pic"><img src="../lib/img/f1.jpg" class="circle" /><p>Tylands</p></div>
+			</div>
+			<div class="user-nav">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="reset.html">
+							修改密码
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="feedback.html">
+							反馈意见
+						</a>
+					</li>					
+				</ul>
+				<button id="loginout" type="button" class="mui-btn mui-btn-success mui-btn-block">退出登录</button>
 			</div>
 		</div>
 		<div class="footer"></div>
 		<script type="text/javascript" src="../lib/js/mui.min.js"></script>
 		<script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../lib/js/app.js"></script>
 		<script type="text/javascript">
-			$(function(){
-				$(".header").load('../template/header-nav.html');
-				$(".footer").load('../template/foot-nav.html');
+			$(function(){				
+				$("#loginout").on('tap',function(){
+					window.location.href='../index.html';
+				});
 			});
 		</script>
 	</body>
