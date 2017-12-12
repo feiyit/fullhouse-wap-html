@@ -7,28 +7,34 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="../lib/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="../lib/css/app.css" />
-		<title>登录</title>
+		<title>重置密码</title>
 	</head>
 	<body>
 		<div class="header"></div>
 		<div class="mui-content">
-			<div class="login-cimg"><img src="../lib/img/s_logo.png" /></div>
-			<div class="login-form">
+			<div class="os-tip">重置密码</div>
+			<div class="login-form reset-form">
 				<form>
 					<div class="mui-input-row">
-						<i class="fa fa-user-o"></i>
-						<input type="text" class="mui-input-clear" placeholder="输入您的手机号/邮箱">
+						<i class="fa fa fa-mobile"></i>
+						<input type="number" class="mui-input-clear" placeholder="输入您的手机号">
 					</div>
+					<div class="mui-input-row input-row-code">
+						<i class="fa fa-thermometer-2"></i>
+						<input type="number"  placeholder="输入验证码">
+						<button type="button" class="mui-btn mui-btn-success mui-btn-block">获得验证码</button>
+					</div>	
 					<div class="mui-input-row mui-password">
 						<i class="fa fa-lock"></i>
 						<input type="password" class="mui-input-password" placeholder="输入您的密码">
+					</div>	
+					<div class="mui-input-row mui-password">
+						<i class="fa fa-lock"></i>
+						<input type="password" class="mui-input-password" placeholder="再次输入密码">
+					</div>	
+					<div class="mui-input-row">
+						<button type="button" class="mui-btn mui-btn-success mui-btn-block">确认</button>
 					</div>					
-					<div class="mui-input-row">
-						<button type="button" class="mui-btn mui-btn-success mui-btn-block">会员登录</button>
-					</div>
-					<div class="mui-input-row">
-						<p class="wjpwd"><a href="reset.html">忘记密码？</a></p>
-					</div>
 				</form>
 			</div>
 		</div>

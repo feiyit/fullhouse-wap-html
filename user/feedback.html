@@ -7,28 +7,29 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="../lib/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="../lib/css/app.css" />
-		<title>登录</title>
+		<title>反馈意见</title>
 	</head>
 	<body>
 		<div class="header"></div>
 		<div class="mui-content">
-			<div class="login-cimg"><img src="../lib/img/s_logo.png" /></div>
-			<div class="login-form">
+			
+			<div class="feedback-form">
 				<form>
+					<p>问题和意见</p>
 					<div class="mui-input-row">
-						<i class="fa fa-user-o"></i>
-						<input type="text" class="mui-input-clear" placeholder="输入您的手机号/邮箱">
+						<textarea id="question" maxlength="50" placeholder="请详细描述你的问题和意见..."></textarea>
 					</div>
-					<div class="mui-input-row mui-password">
-						<i class="fa fa-lock"></i>
-						<input type="password" class="mui-input-password" placeholder="输入您的密码">
+					<p>移动电话</p>
+					<div class="mui-input-row">
+						<input type="number" maxlength="11"  placeholder="请输入您的手机号码">
+					</div>	
+					<p>邮箱（选填）</p>
+					<div class="mui-input-row">
+						<input type="text" maxlength="30" placeholder="(选填,方便我们联系你 )">
+					</div>	
+					<div class="mui-input-row">
+						<button type="button" class="mui-btn mui-btn-success mui-btn-block">提交</button>
 					</div>					
-					<div class="mui-input-row">
-						<button type="button" class="mui-btn mui-btn-success mui-btn-block">会员登录</button>
-					</div>
-					<div class="mui-input-row">
-						<p class="wjpwd"><a href="reset.html">忘记密码？</a></p>
-					</div>
 				</form>
 			</div>
 		</div>

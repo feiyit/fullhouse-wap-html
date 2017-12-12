@@ -1,3 +1,4 @@
+@import "mui.min.css";
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -60,6 +61,9 @@ img {
 }
 ul,li{list-style-type: none; margin: 0; padding: 0;}
 
+.mui-btn-success,.mui-btn-success:focus,.mui-btn-success:active,.mui-btn-success:active:enabled{border: 1px solid #00AE66; background-color: #00AE66;}
+.mui-content {padding-top: 44px; background-color: #FFFFFF;}
+
 /* 顶部 */
 .header{ position: fixed; height: 44px; width: 100%; z-index: 10; line-height: 44px; background-color: #00AE66;}
 .header a{display: block; float: left; padding-left: 15px; color: #FFFFFF;}
@@ -78,3 +82,31 @@ ul,li{list-style-type: none; margin: 0; padding: 0;}
 .footer ul li a.active{ color: #00AE66;}
 .footer ul li a span{display: block; height:25px; line-height: 25px;padding-top: 3px;}
 .footer ul li a span i{font-size:16px;}
+
+/* 登录 */
+.login-cimg{text-align: center; padding-top: 40px;}
+.login-cimg img{width:40%;}
+.login-form{padding:50px 20px;}
+.login-form .mui-input-row .mui-btn,.feedback-form .mui-input-row .mui-btn{width:100%; font-size:15px;padding: 12px 15px;}
+.login-form input{padding-left: 40px; background-color: #e6e6e6; border: none;}
+.login-form i{position: absolute; top: 12px; left: 10px; font-size: 17px; color: #FFFFFF;}
+.login-form i.fa-lock{font-size: 20px; top: 10px;}
+.login-form i.fa-mobile{font-size: 25px; top: 8px; left: 12px;}
+.login-form i.fa-thermometer-2{left:13px;font-size: 18px; top:10px;}
+.login-form .mui-input-password~.mui-icon-eye{color: #FFFFFF;}
+.login-form .mui-input-password~.mui-icon-eye.mui-active{color: #00AE66;}
+.login-form ::-webkit-input-placeholder { /* WebKit browsers */ color:    #FFFFFF;}
+.login-form ::-moz-placeholder { /* WebKit browsers */ color:    #FFFFFF;}
+.login-form ::-ms-input-placeholder  { /* WebKit browsers */ color:    #FFFFFF;}
+.login-form :-moz-placeholder { /* WebKit browsers */ color:    #FFFFFF;}
+.login-form .wjpwd{text-align: right;}
+/* 重置密码 */
+.os-tip{text-align: center; padding: 30px 0; color: #00AE66; font-size: 16px;}
+.reset-form{padding: 20px; padding-top: 0px;}
+.reset-form .input-row-code input{width: 65%;}
+.reset-form .input-row-code .mui-btn{width:30%; position:relative; right: 0px; font-size: 14px;padding: 11px 0px; text-align: center;}
+/* 反馈意见 */
+.feedback-form{padding: 0 20px; padding-top: 40px;}
+/* 个人中心 */
+.user-index .login-cimg {padding-top: 20px;}
+.user-index .login-cimg img{width:60%}
