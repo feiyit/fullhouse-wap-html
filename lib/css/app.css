@@ -185,9 +185,55 @@ right:50%; margin-right: -55px; top: 27px;}
 .video-wrap .mui-card{margin: 0; border-radius: 0px;}
 .video-wrap .mui-card-header.mui-card-media{padding: 0;}
 
+/* 图库 */
+.gallery-wrap{padding-bottom: 50px;}
+.gallery-search{padding:15px;}
+.gallery-wrap input{ height: 36px;}
+.gallery-wrap .mui-input-row select{width:23%; display:inline-block; border: 1px solid rgba(0,0,0,.2) !important; 
+height: 36px; font-size:14px; padding: 0px 15px; outline: none; margin-right: 1.4%;}
+.gallery-wrap .mui-input-row select:last-child{margin-right: 0px;}
+.gallery-wrap button{width: 100% !important; font-size: 14px; margin-bottom: 0px;}
+.gallery-list{margin-top: -10px;}
+.gallery-list .mui-table-view:before{display: none;}
+
+/* 自定义页面加载效果 */
+.page-cover{position: fixed; z-index: 99999; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color:rgba(17, 17, 17, 0);}
+.page-load{width:140px; position: fixed; z-index: 100000; left: 50%; margin-left: -70px; padding: 25px 15px 15px 15px;background-color:rgba(17, 17, 17, 0.7);
+border-radius: 6px; color: #FFFFFF; text-align: center; font-size: 14px; top: 50%; margin-top: -60px;}
+.page-load p{color: #FFFFFF; margin: 0px; margin-top: 10px;}
+.page-load .loading{ width: 60px; height: 50px; display: inline-block; background: url(../img/Spinner.svg) no-repeat; background-size: 100%;}
+.page-load i{font-size: 35px;}
+/* 返回顶部 */
+.gotop{width:40px; height: 40px; position: fixed; right: 10px; bottom: 60px; text-align: center; line-height: 40px; display: none;}
+.gotop span{display:inline-block; width:35px; height: 35px; border-radius: 50%; background: rgba(29,161,243,.7); z-index: 1000001;}
+.gotop span i{ color: #FFFFFF;}
+
+/* 无数据 */
+.no-data{text-align: center; padding: 20px 0;}
+.no-data i{font-size: 40px;}
+.no-data span{ display: block; font-size: 13px;}
+/* 上拉刷新 */
+.dom-load{text-align: center; padding: 15px 0;}
+.dom-load i{vertical-align: middle; margin-right: 10px;}
+.dom-load span{font-size: 13px;}
 
 
-
+/* iphone 6plus */
+@media screen and (max-width: 414px) {
+	
+}
+/* iphone 6 */
+@media screen and (max-width: 375px) {
+	
+}
+/* 5寸 */
+@media screen and (max-width: 360px) {
+	.gallery-wrap .mui-input-row select{margin-right: 1.4%;}
+}
+/* iphone iphone5 */
+@media screen and (max-width: 320px) {
+	.gallery-wrap .mui-input-row select{margin-right: 1.3%;}
+}
 
 
 
