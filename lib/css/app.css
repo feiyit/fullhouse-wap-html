@@ -180,4 +180,19 @@ right:50%; margin-right: -55px; top: 27px;}
 .mui-indexed-list input[type=search]{border-radius: 0px; margin-bottom: 0px;}
 .mui-indexed-list-search.mui-active:before{top:9px !important; }
 
+/* 视频 */
+.video-wrap .mui-card-media img,.video-wrap .mui-card-media{height: 200px; width: 100%;}
+.video-wrap .mui-card{margin: 0; border-radius: 0px;}
+.video-wrap .mui-card-header.mui-card-media{padding: 0;}
+
+
+
+
+
+
+
+
+
+
+
 
