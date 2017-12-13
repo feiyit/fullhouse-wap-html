@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="/lib/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="/lib/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/lib/css/app.css" />
+		<title>手机端-首页</title>
+	</head>
+
+	<body>
+		<div class="header"></div>
+		<div class="mui-content join-content">
+			<div class="new-back"><a href="/join.html"><i class="fa fa-angle-left"></i></a><span class="mui-btn mui-btn-success">分享</span></div>
+			<div class="join-text">
+				<h4>2017中国家居建材行业年度人物评选重磅开启</h4>
+				<p class="times">发布时间：2017-12-10</p>
+				<div class="join-tab">
+					<table>
+						<tr>
+							<th>联系人</th><td>张先生</td>
+						</tr>
+						<tr>
+							<th>意向品牌</th><td>欧派</td>
+						</tr>
+						<tr>
+							<th>代理地区</th><td>北京</td>
+						</tr>
+						<tr>
+							<th>投资金额</th><td>50万</td>
+						</tr>
+						<tr>
+							<th>门店面积</th><td>1000平米</td>
+						</tr>
+						<tr>
+							<th>代理状态</th><td>意向中</td>
+						</tr>
+						<tr>
+							<th>预计开业时间</th><td>3个月内</td>
+						</tr>
+					</table>
+				</div>
+				<div class="join-info">为表彰“以中华力量描绘品牌蓝图，以家居榜样打造全球格局”的家居建材行业优秀人物，为打造广泛性、权威性、开放性、专业性的中国家居建材行业的顶尖人物年度评选</div>
+			</div>
+			<div class="join-foot">
+				<div class="red-news"><span>提交加盟信息</span></div>
+				<div class="zs-sumbit">					
+					<div class="mui-input-row">
+						<input type="text" maxlength="15" class="mui-input-clear" placeholder="请输入您的姓名" />
+					</div>
+					<div class="mui-input-row">
+						<input type="number" maxlength="11" class="mui-input-clear" placeholder="请输入您的手机号，以便我们及时联系您" />
+					</div>
+					<div class="mui-input-row">
+						<input id="selCity" type="text" maxlength="11" class="mui-input-clear" readonly="readonly" placeholder="请选择地址" />
+					</div>
+					<div class="mui-input-row">
+						<button type="button" class="mui-btn mui-btn-success mui-btn-block">马上提交，快人一步</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+		<script type="text/javascript" src="/lib/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/lib/js/mui.min.js"></script>
+		<script type="text/javascript" src="/lib/js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="/lib/js/city.data-3.js"></script>
+		<script type="text/javascript" src="/lib/js/app.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var cityPicker3 = new mui.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);					
+					var pickbtn = doc.getElementById('selCity');
+					pickbtn.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							pickbtn.value = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

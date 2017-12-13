@@ -1,20 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="lib/css/mui.picker.min.css" />
 		<link rel="stylesheet" href="lib/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="lib/css/app.css" />
 		<title>手机端-首页</title>
 	</head>
+
 	<body>
 		<div class="header"></div>
-		<div class="mui-content"></div>
+		<div class="mui-content gallery-wrap">
+			<div class="gallery-search">
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear" placeholder="请输入您的意向品牌">
+				</div>
+				<div class="mui-input-row">
+					<input type="text" id="searchCity" class="mui-input-clear" readonly="readonly" placeholder="请选择地址">
+				</div>
+				<div class="mui-input-row">
+					<button type="button" class="mui-btn mui-btn-success mui-btn-block">立即搜索</button>
+				</div>
+			</div>
+			<div class="join-list">
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">新疆 昌吉回族自治州 木垒哈萨克自治县</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">北京市朝阳区</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">新疆 昌吉回族自治州 木垒哈萨克自治县</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">北京市朝阳区</span><span>2017-07-12</span></div>
+						<div class="join-info">为表彰“以中华力量描绘品牌蓝图，以家居榜样打造全球格局”的家居建材行业优秀人物，为打造广泛性、权威性、开放性、专业性的中国家居建材行业的顶尖人物年度评选</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">新疆 昌吉回族自治州 木垒哈萨克自治县</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">北京市朝阳区</span><span>2017-07-12</span></div>
+						<div class="join-info">为表彰“以中华力量描绘品牌蓝图，以家居榜样打造全球格局”的家居建材行业优秀人物，为打造广泛性、权威性、开放性、专业性的中国家居建材行业的顶尖人物年度评选</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">新疆 昌吉回族自治州 木垒哈萨克自治县</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+				<div class="join-item">
+					<a href="/join/index.html">
+						<div class="join-title"><span>张先生</span><span class="mui-ellipsis">北京市朝阳区</span><span>2017-07-12</span></div>
+						<div class="join-info">中国家居建材行业的30年，走过了从无到有、从分散到集中</div>
+					</a>
+				</div>
+			</div>
+			<div class="join-foot">
+				<div class="more-tip">查看更多加盟信息</div>
+				<div class="red-news"><span>提交加盟信息</span></div>
+				<div class="zs-sumbit">					
+					<div class="mui-input-row">
+						<input type="text" maxlength="15" class="mui-input-clear" placeholder="请输入您的姓名" />
+					</div>
+					<div class="mui-input-row">
+						<input type="number" maxlength="11" class="mui-input-clear" placeholder="请输入您的手机号，以便我们及时联系您" />
+					</div>
+					<div class="mui-input-row">
+						<input id="selCity" type="text" maxlength="11" class="mui-input-clear" readonly="readonly" placeholder="请选择地址" />
+					</div>
+					<div class="mui-input-row">
+						<button type="button" class="mui-btn mui-btn-success mui-btn-block">马上提交，快人一步</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer"></div>
 		<script type="text/javascript" src="lib/js/jquery.min.js"></script>
-		<script type="text/javascript" src="lib/js/swiper.min.js"></script>
+		<script type="text/javascript" src="lib/js/mui.min.js"></script>
+		<script type="text/javascript" src="lib/js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="lib/js/city.data-3.js"></script>
 		<script type="text/javascript" src="lib/js/app.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var cityPicker3 = new mui.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var searchCitybtn = doc.getElementById('searchCity');
+					searchCitybtn.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							searchCitybtn.value = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+					
+					var pickbtn = doc.getElementById('selCity');
+					pickbtn.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							pickbtn.value = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
 	</body>
+
 </html>
