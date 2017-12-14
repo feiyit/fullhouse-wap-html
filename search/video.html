@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="/lib/css/swiper.css" />
+		<link rel="stylesheet" href="/lib/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/lib/css/app.css" />
+		<title>图库详细页</title>
+	</head>
+
+	<body>
+		<header class="se-wall">
+			<form onsubmit="return goKey()">
+				<div class="h-search mui-clearfix mui-input-row">
+					<a href="javascript:history.go(-1);" class="h-goback"><i class="mui-icon mui-icon-arrowleft"></i></a>
+					<span class="mui-icon mui-icon-search"></span>
+					<input type="search" id="key" class="mui-input-clear" placeholder="搜索内容" />
+					<button type="button" id="btnGoSearch" class="mui-btn mui-btn-success">搜索</button>
+				</div>
+			</form>
+			<div class="search-nav">
+				<a href="/search/index.html"><span><i class="fa fa-newspaper-o"></i>新闻</span></a>
+				<a href="/search/enterprise.html"><span><i class="fa fa-home"></i>企业</span></a>
+				<a href="/search/product.html"><span><i class="fa fa-product-hunt"></i>产品</span></a>
+				<a href="/search/video.html" class="mui-active"><span><i class="fa fa-youtube-play"></i>视频</span></a>
+			</div>
+		</header>
+		<div class="mui-content news-wrap video-wrap search-wrap">
+			<div class="mui-card">
+				<div class="mui-card-header mui-card-media" id="v1">
+					<video width="375" height="200" src="/lib/files/echo-hereweare.mp4" type="video/mp4" id="player1" poster="/lib/img/old/cbd.jpg" controls="controls" preload="none"></video>
+				</div>
+				<div class="mui-card-content-inner">
+					<p>这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-card-link">播放55次</a>
+					<a class="mui-card-link">2017-12-10</a>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header mui-card-media" id="v1">
+					<video width="375" height="200" src="/lib/files/echo-hereweare.mp4" type="video/mp4" id="player1" poster="/lib/img/old/cbd.jpg" controls="controls" preload="none"></video>
+				</div>
+				<div class="mui-card-content-inner">
+					<p>这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-card-link">播放55次</a>
+					<a class="mui-card-link">2017-12-10</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/lib/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/lib/js/swiper.min.js"></script>
+		<script type="text/javascript" src="/lib/js/app.js"></script>
+		<script type="text/javascript">
+			//app.alert();
+		</script>
+	</body>
+
+</html>
