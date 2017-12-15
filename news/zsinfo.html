@@ -17,6 +17,41 @@
 		<div class="mui-content os-content news-wrap">
 			<div class="new-back">
 				<a href="/index.html"><i class="fa fa-angle-left"></i></a><span class="mui-btn mui-btn-success">分享</span></div>
+			<!-- banner begin -->
+			<div id="zsbanner" class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="javascript:;"><img data-src="/lib/img/old/1.png" class="swiper-lazy"></a>
+						<div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+					</div>
+					<div class="swiper-slide">
+						<a href="javascript:;"><img data-src="/lib/img/old/2.png" class="swiper-lazy"></a>
+						<div class="swiper-lazy-preloader swiper-lazy-preloader"></div>
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- banner end -->
+			
+			<div class="zs-brank">
+				<table>
+					<tr>
+						<td>
+							<img src="/lib/img/old/1.png" />
+							<a href="javascript:void(0)" class="mui-btn mui-btn-success">我要加盟</a>
+						</td>
+						<td>
+							<p>北京飞易腾科技有限公司</p>
+							<p>地址：北京市朝阳区尚8里文创园</p>
+							<p>联系人：张三</p>
+							<p>招商电话：010-57178368</p>
+							<p>邮箱：123456789@qq.com</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<div class="ntitle">美的厨电产品获首个“广东优质”认证证书
 				<p>全屋定制网<span>2017-12-10</span></p>
 			</div>
@@ -46,6 +81,17 @@
 		<script type="text/javascript" src="/lib/js/jquery.min.js"></script>
 		<script type="text/javascript" src="/lib/js/swiper.min.js"></script>
 		<script type="text/javascript" src="/lib/js/app.js"></script>
+		<script type="text/javascript">
+			var bannerSwiper = new Swiper('#zsbanner', {
+				preloadImages: true,
+				lazyLoading: true,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false,
+				loop: true,
+				pagination: '.swiper-pagination'
+			});
+		</script>
 	</body>
 
 </html>
